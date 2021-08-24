@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Balham.otf">
+            <string>Balham</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OpenQuizz_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AhE-CD-vLQ">
+                                <rect key="frame" x="37.666666666666657" y="698" width="300" height="80"/>
+                                <color key="backgroundColor" red="0.40423873069999999" green="0.55177944899999998" blue="0.76473176480000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="CP4-cY-CIu"/>
+                                    <constraint firstAttribute="height" constant="80" id="aje-9q-X5I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Balham" family="Balham" pointSize="30"/>
+                                <state key="normal" title="New Game">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapNewGameButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="l1i-L4-DVR"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="849-xn-12H">
+                                <rect key="frame" x="169" y="720" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/10" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0JD-ON-wdg">
+                                <rect key="frame" x="37.666666666666657" y="621" width="300" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="9cv-Fs-Tk6"/>
+                                    <constraint firstAttribute="height" constant="25" id="9ze-tI-pbL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Balham" family="Balham" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fbx-iy-9aP" customClass="QuestionView" customModule="OpenQuizz_2" customModuleProvider="target">
+                                <rect key="frame" x="16" y="227" width="343" height="343"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Icon Error" translatesAutoresizingMaskIntoConstraints="NO" id="TAu-rm-z8V">
+                                        <rect key="frame" x="151" y="295" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyY-9k-TxF">
+                                        <rect key="frame" x="8" y="16" width="327" height="327"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="327" id="HvN-R7-R2v"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Balham" family="Balham" pointSize="23"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.75317972899999996" green="0.76830476520000002" blue="0.78431665900000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="eyY-9k-TxF" firstAttribute="top" secondItem="fbx-iy-9aP" secondAttribute="topMargin" constant="8" id="6P7-bk-g4P"/>
+                                    <constraint firstItem="eyY-9k-TxF" firstAttribute="bottom" secondItem="fbx-iy-9aP" secondAttribute="bottomMargin" constant="8" id="K0M-yT-q8J"/>
+                                    <constraint firstItem="eyY-9k-TxF" firstAttribute="trailing" secondItem="fbx-iy-9aP" secondAttribute="trailingMargin" id="Vxk-Ys-fLW"/>
+                                    <constraint firstItem="eyY-9k-TxF" firstAttribute="leading" secondItem="fbx-iy-9aP" secondAttribute="leadingMargin" id="pdy-Et-tCC"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="icon" destination="TAu-rm-z8V" id="Pvw-6J-a8O"/>
+                                    <outlet property="label" destination="eyY-9k-TxF" id="YFR-N3-iMd"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.29914051289999999" green="0.34746217730000001" blue="0.41961759329999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="AhE-CD-vLQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0ZW-4K-CuG"/>
+                            <constraint firstItem="AhE-CD-vLQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="332" id="5PW-HR-YKz"/>
+                            <constraint firstItem="0JD-ON-wdg" firstAttribute="centerX" secondItem="AhE-CD-vLQ" secondAttribute="centerX" id="Fdl-m0-DL2"/>
+                            <constraint firstItem="0JD-ON-wdg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Hf6-Zl-NLv"/>
+                            <constraint firstItem="0JD-ON-wdg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="227.5" id="L2g-de-4eK"/>
+                            <constraint firstItem="fbx-iy-9aP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="183" id="VqR-n0-d49"/>
+                            <constraint firstItem="fbx-iy-9aP" firstAttribute="centerX" secondItem="0JD-ON-wdg" secondAttribute="centerX" id="YGt-FR-Ssk"/>
+                            <constraint firstItem="fbx-iy-9aP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="i5p-hN-6RH"/>
+                            <constraint firstItem="AhE-CD-vLQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="luh-jH-Xxl"/>
+                            <constraint firstItem="AhE-CD-vLQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="332" id="xRd-UL-DrI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="849-xn-12H" id="WnG-HX-QGZ"/>
+                        <outlet property="button" destination="AhE-CD-vLQ" id="uRO-hA-XEc"/>
+                        <outlet property="questionView" destination="fbx-iy-9aP" id="rMY-iV-PSh"/>
+                        <outlet property="scoreLabel" destination="0JD-ON-wdg" id="AW1-uK-Qpr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="76.847290640394093"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon Error" width="36" height="35"/>
+    </resources>
+</document>
