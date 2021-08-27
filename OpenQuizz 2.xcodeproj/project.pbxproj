@@ -11,13 +11,13 @@
 		8DCA390C26D3F5900004233D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCA390B26D3F5900004233D /* SceneDelegate.swift */; };
 		8DCA390E26D3F5900004233D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCA390D26D3F5900004233D /* ViewController.swift */; };
 		8DCA391126D3F5900004233D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DCA390F26D3F5900004233D /* Main.storyboard */; };
-		8DCA391326D3F5920004233D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DCA391226D3F5920004233D /* Assets.xcassets */; };
 		8DCA391626D3F5920004233D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DCA391426D3F5920004233D /* LaunchScreen.storyboard */; };
 		8DCA392226D3F7820004233D /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCA392126D3F7820004233D /* Question.swift */; };
 		8DCA392426D3F7940004233D /* QuestionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCA392326D3F7940004233D /* QuestionManager.swift */; };
 		8DCA392626D3F7A00004233D /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCA392526D3F7A00004233D /* Game.swift */; };
 		8DCA392826D3F8220004233D /* Balham.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8DCA392726D3F8220004233D /* Balham.otf */; };
 		8DCA392A26D50AB10004233D /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCA392926D50AB10004233D /* QuestionView.swift */; };
+		8DEB9FB426D6968F00746E64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DEB9FB326D6968F00746E64 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +26,6 @@
 		8DCA390B26D3F5900004233D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8DCA390D26D3F5900004233D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8DCA391026D3F5900004233D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8DCA391226D3F5920004233D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DCA391526D3F5920004233D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DCA391726D3F5920004233D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DCA392126D3F7820004233D /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
@@ -34,6 +33,7 @@
 		8DCA392526D3F7A00004233D /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		8DCA392726D3F8220004233D /* Balham.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Balham.otf; sourceTree = "<group>"; };
 		8DCA392926D50AB10004233D /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		8DEB9FB326D6968F00746E64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +81,7 @@
 			children = (
 				8DCA390926D3F5900004233D /* AppDelegate.swift */,
 				8DCA392726D3F8220004233D /* Balham.otf */,
-				8DCA391226D3F5920004233D /* Assets.xcassets */,
+				8DEB9FB326D6968F00746E64 /* Assets.xcassets */,
 				8DCA391426D3F5920004233D /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
@@ -172,9 +172,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DCA391626D3F5920004233D /* LaunchScreen.storyboard in Resources */,
-				8DCA391326D3F5920004233D /* Assets.xcassets in Resources */,
 				8DCA392826D3F8220004233D /* Balham.otf in Resources */,
 				8DCA391126D3F5900004233D /* Main.storyboard in Resources */,
+				8DEB9FB426D6968F00746E64 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

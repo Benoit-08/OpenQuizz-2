@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Plan de travail 2.png",
+      "filename" : "Logo with text.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Plan de travail 2@2x.png",
+      "filename" : "Logo with text@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Plan de travail 2@3x.png",
+      "filename" : "Logo with text@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

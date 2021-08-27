@@ -25,17 +25,18 @@ class QuestionView: UIView {
     private func setStyle (_ style: Style) {
         switch style {
         case .correct:
-            backgroundColor = UIColor(red: 200/255.0, green: 236/255.0, blue: 160/255.0, alpha: 1)
+//            backgroundColor = UIColor(red: 200/255.0, green: 236/255.0, blue: 160/255.0, alpha: 1)
+            backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
             icon.image = UIImage(named: "Icon Correct")
             icon.isHidden = false
         case .incorrect:
-            backgroundColor = #colorLiteral(red: 0.953055799, green: 0.5271533728, blue: 0.5785601735, alpha: 1)
+            backgroundColor = #colorLiteral(red: 0.521568656, green: 0.1098039225, blue: 0.05098039284, alpha: 1)
 //            backgroundColor = colorLiteral
             icon.image = #imageLiteral(resourceName: "Icon Error")
 //            icon.image = imageLiteral
             icon.isHidden = false
         case .standard:
-            backgroundColor = #colorLiteral(red: 0.7496449351, green: 0.7689861059, blue: 0.7860563397, alpha: 1)
+            backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
             icon.isHidden = true
         }
         
